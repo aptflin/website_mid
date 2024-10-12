@@ -1,0 +1,140 @@
+html body{        
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 940px;
+    margin-left: 160px;
+    margin-right: auto;
+}
+
+h1{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #778a50;
+    font-size: 50px;
+
+}
+h3{
+
+    border-radius: 4.5px; /*圓角*/
+
+    font-size: 20px;    
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #778a50;
+    color: #edf2c5;
+
+    padding: 15px 15px 15px 15px; /* 調整內邊距來拉大背景框 上右下左*/
+    word-spacing: 60px;
+}
+
+body {
+    background-color: #edf2c5;
+    
+}
+
+.headAndIcon{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    height: 100px;
+}
+
+.icon{
+    display: flex; /* 使用 flexbox 將圖示和文字並排 */
+    align-items: center; /* 垂直居中對齊 */
+    width: 1px;
+    height: 150px;
+}
+
+.icon img{
+    display:inline;
+    width: 30px;
+
+    margin-right: 10px; /* 調整圖標之間的距離 */
+    border-right: 2px solid #778a50; /* 添加分隔線 */
+    padding-right: 10px; /* 給分隔線留出一些空間 */
+}
+
+/*移除第一個icon的分隔線*/
+.icon img:first-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.half{
+    display: flex; /* 使用 flexbox 讓子元素並排 */
+    justify-content: space-around; /* 控制兩個區塊之間的空間 */
+    align-items: flex-start; /* 如果高度不同，頂部對齊 */
+    /*padding: 0px 125px 115px 125px;*/
+
+    max-width: 1250px; /* 與容器的最大寬度相同 */
+    padding: 20px 0; /* 可以調整上下內邊距 */
+    margin-left: 135px;
+    margin-right: auto;
+    height: 400px;
+}
+
+.Vegetables,.contact {
+    width: 45%; /* 控制每個區塊的寬度 */
+    margin: 0; /* 移除 margin */
+}
+
+
+footer{
+    background-color: #778a50;
+    color: #edf2c5;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: small;
+
+    height: 50px; /*設定footer本身高度*/
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    
+}
+
+aside{
+    background-color: #f7fbda;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    color:#7D7D7D;
+    padding: 29px; /* 增加容器的內邊距 */
+    font-size: 12.5px;
+}
+
+.bigImag{
+    width: 1200px;
+}
+
+.vegetablesIcon{
+    width: 183px;
+}
+
+.Header {
+    width: 1170px; /* 確保與圖片相同的寬度 */
+}
+
+p{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #778a50;
+
+    display: inline;
+    
+    border-radius: 4px;
+    border-width: 2px;
+    border-style:solid ;
+    width: auto;
+    height: auto;
+    border-color: #778a50;
+    padding: 5px;
+    text-align: center;
+
+    margin:5px;
+
+}

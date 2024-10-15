@@ -1,87 +1,79 @@
-html body{        
+html, body {
     margin: 0;
     padding: 0;
-}
-
-.container{
-    max-width: 940px;
-    margin-left: 160px;
-    margin-right: auto;
-}
-
-h1{
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    color: #778a50;
-    font-size: 50px;
-
-}
-h3{
-
-    border-radius: 4.5px; /*圓角*/
-
-    font-size: 20px;    
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #778a50;
-    color: #edf2c5;
-
-    padding: 15px 15px 15px 15px; /* 調整內邊距來拉大背景框 上右下左*/
-    word-spacing: 60px;
+    height: 100%;
 }
 
 body {
     background-color: #edf2c5;
-    
 }
 
-.headAndIcon{
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px; /* 设置最大宽度 */
+}
+
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #778a50;
+    font-size: 50px;
+    text-align: center; /* 置中标题 */
+}
+
+h3 {
+    border-radius: 4.5px;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #778a50;
+    color: #edf2c5;
+    padding: 15px;
+    word-spacing: 60px;
+    /* 保持 h3 原本的样式 */
+}
+
+.headAndIcon {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 保持左右分布 */
     margin: 0px;
     height: 100px;
+    align-items: center;
 }
 
-.icon{
-    display: flex; /* 使用 flexbox 將圖示和文字並排 */
-    align-items: center; /* 垂直居中對齊 */
-    width: 1px;
-    height: 150px;
+.icon {
+    display: flex; /* 保持图标与文字并排 */
+    align-items: center;
 }
 
-.icon img{
-    display:inline;
+.icon img {
+    display: inline;
     width: 30px;
-
-    margin-right: 10px; /* 調整圖標之間的距離 */
-    border-right: 2px solid #778a50; /* 添加分隔線 */
-    padding-right: 10px; /* 給分隔線留出一些空間 */
+    margin-right: 10px;
+    border-right: 2px solid #778a50;
+    padding-right: 10px;
 }
 
-/*移除第一個icon的分隔線*/
 .icon img:first-child {
     border-right: none;
     padding-right: 0;
 }
 
-.half{
-    display: flex; /* 使用 flexbox 讓子元素並排 */
-    justify-content: space-around; /* 控制兩個區塊之間的空間 */
-    align-items: flex-start; /* 如果高度不同，頂部對齊 */
-    /*padding: 0px 125px 115px 125px;*/
-
-    max-width: 1250px; /* 與容器的最大寬度相同 */
-    padding: 20px 0; /* 可以調整上下內邊距 */
-    margin-left: 135px;
+.half {
+    display: flex;
+    justify-content: space-between; /* 保持两边均匀分布 */
+    max-width: 1250px;
+    padding: 20px 0;
+    margin-left: auto;
     margin-right: auto;
-    height: 400px;
 }
 
-.Vegetables,.contact {
-    width: 45%; /* 控制每個區塊的寬度 */
-    margin: 0; /* 移除 margin */
+.Vegetables, .contact {
+    width: 45%; /* 控制每个区域的宽度 */
+    margin: 0 auto; /* 水平居中 */
 }
-
 
 footer{
     height: 50px; /*設定footer本身高度*/    
@@ -95,47 +87,44 @@ footer{
     display: flex;
     justify-content: center; /* 水平置中 */
     align-items: center; /* 垂直置中 */
-    
+
 }
 
-aside{
+aside {
     background-color: #f7fbda;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    color:#7D7D7D;
-    padding: 29px; /* 增加容器的內邊距 */
+    color: #7D7D7D;
+    padding: 29px;
     font-size: 12.5px;
+    /* 保持 aside 原本的样式 */
 }
 
-.bigImag{
-    width: 1200px;
+.bigImag {
+    width: 100%;
+    max-width: 1200px;
 }
 
-.vegetablesIcon{
+.vegetablesIcon {
     width: 183px;
 }
 
 .Header {
-    width: 1170px; /* 確保與圖片相同的寬度 */
+    width: 100%;
+    max-width: 1170px;
 }
 
-p{
+p {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     color: #778a50;
-
-    display: inline;
-    
+    display: inline-block;
     border-radius: 4px;
     border-width: 2px;
-    border-style:solid ;
-    width: auto;
-    height: auto;
+    border-style: solid;
     border-color: #778a50;
     padding: 5px;
     text-align: center;
-
-    margin:5px;
-
+    margin: 5px;
 }
